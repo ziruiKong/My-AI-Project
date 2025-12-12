@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SYNEXRA AI 聊天平台</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <!-- Three.js - 用于Vanta效果 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+     <!-- Vanta.js - 用于背景效果 -->
+     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+     <!-- Coze Web SDK -->
+     <script 
+       src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.10/libs/cn/index.js"
+       onload="console.log('Coze Web SDK加载成功')"
+       onerror="console.error('Coze Web SDK加载失败')"
+     ></script>
+     <!-- 添加运行时页面支持 -->
+     <script>
+       // 确保全局对象已定义
+       window.VANTA = window.VANTA || {};
+     </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- 酷狗音乐 JavaScript 库 -->
+    <script data-embed="false" type="text/javascript" src="https://www.kugou.com/yy/static/js/PCToMoblie.js"></script>
+  </body>
+</html>
